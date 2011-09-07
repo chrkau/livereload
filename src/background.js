@@ -17,7 +17,7 @@ LivereloadBackground.prototype = {
 
     // localhost does not work on Linux b/c of http://code.google.com/p/chromium/issues/detail?id=36652,
     // 0.0.0.0 does not work on Windows
-    host: (navigator.appVersion.indexOf('Linux') >= 0 ? '0.0.0.0' : 'localhost'),
+    host: (navigator.appVersion.indexOf('Linux') >= 0 ? '0.0.0.0' : window.location.hostname),
 
     port: 35729,
 
